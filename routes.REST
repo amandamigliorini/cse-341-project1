@@ -1,0 +1,8 @@
+//localhost
+//get all contacts/users
+
+GET http://localhost:3000/users
+
+//get contact/user by id
+
+GET http://localhost:3000/users/66ef3253eb73ce0fc8ce1902

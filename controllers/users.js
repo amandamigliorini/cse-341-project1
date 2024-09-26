@@ -57,6 +57,7 @@ const updateUser = async (req, res) => {
 
 const deleteUser = async (req, res) => {
     //#swagger.tags=['Users']
+    //#swagger.description="This endpoint is used to delete a contact/user from your database."
     const userId = new ObjectId(req.params.id);
     const response = await mongodb.getDatabase().db().collection('users').deleteOne({ _id: userId });
     if(response.deletedCount > 0) {
